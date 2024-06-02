@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricutez</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='index.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/8eaa07c0ba.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div class="main">
+    <nav>
+        <img src="{{url_for('static',filename='/images/Cricutezz.png')}}" class="logo"/>
+        <ul>
+            <li><a href="#About">About</a></li>
+            <li><a href="#contact_us">Contact us</a></li>
+            <li><a href="{{url_for('show_video')}}">Generator</a></li>
+        </ul>
+    </nav>
+<div class="content" >
+    <video src="{{url_for('static',filename='/images/Cricketbackground.mp4')}}" muted loop autoplay plays-inline class="back">video</video>
+    <h1>Automatic Cricket Highlights Generator</h1><br>
+    <p>Catch up on all the match's big moments..!
+ 
+    </p><br>
+    <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <button type="submit">Upload File</button>
+</form> 
+</div>
+</div>
+<section>
+    <div class="About" id="About">
+        <h1>
+            About Our Platform
+        </h1>
+        <p>
+            Welcome to the ultimate cricket highlights generator ! Dive into the world of cricket with our innovative platform.
+        </p><br>
+        <p>
+            Imagine watching a thrilling cricket match, but being short on time. An automatic cricket highlights generator solves this problem by using clever technology to condense the entire game into a short, action-packed video featuring all the key moments.
+        </p>
+        <br>
+        <div>
+            <img src="{{url_for('static',filename='/images/cric.jpg')}}" alt="About" width="900" height="557"/>
+        </div>
+    </div>
+</section><br>
+<section class="contact_us" id="contact_us">
+    <table>
+        <tr>
+        <td>
+    <div class="Contact">
+        <h1>Contact Us</h1>
+        <div class="details">
+             <h3>Phone:   9573064035</h3>
+            <h3> JNTU-GV COLLEGE OF
+                    ENGINEERING VIZIANAGARAM </h3>
+                <h3> E-Mail:  jntugv@cricutez.com</h3><br>
+               <div class="icons">
+            <i class="fa-brands fa-facebook"style="font-size: 1.83em"></i>
+            <i class="fa-brands fa-square-instagram"style="font-size: 1.83em"></i>
+            <i class="fa-brands fa-square-whatsapp"style="font-size: 1.83em"></i>
+            <i class="fa-brands fa-twitter"style="font-size: 1.83em"></i>
+        </div>                
+        </div><br></td>
+        <td>
+        <div class="map">
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3791.2779091876423!2d83.37309837334007!3d18.151107380359203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3bef0baf9f2a11%3A0xdb0b518115b27e07!2sJNTU-GV%20COLLEGE%20OF%20ENGINEERING%20VIZIANAGARAM!5e0!3m2!1sen!2sin!4v1712569750101!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </td>
+    </div>
+</tr>
+</table>
+</section>
+</body>
+<footer>
+    <hr>
+    <p>copyRight<span>&copy;</span>2024@batch13.All Right reserved.</p>
+</footer>
+</html>
