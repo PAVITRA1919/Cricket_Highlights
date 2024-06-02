@@ -1,0 +1,196 @@
+/* body{
+    background-image:url(https://img.myloview.com/posters/3d-render-of-sri-lanka-cricket-player-team-with-tournament-equipment-on-blue-background-700-271713626.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: auto;
+    padding: 5%;
+    margin: auto;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(95, 76, 220, 0.557),rgba(95, 76, 220, 0.557));
+    position: relative;
+    padding: 0.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    width: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav img{
+   width:120px;
+   /* height: 60px; */
+   
+  
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+.content{
+    text-align: center;
+}
+
+.content h1{
+    font-size: 50px;
+    color: #e8ba13de;
+    /* font-weight:200; */
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+      
+      
+}
+
+.content p{
+     color: aliceblue;
+}
+
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.back{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.content button{
+    background-color: #75d7b8;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.About p{
+    font-family: "Carattere", cursive;
+    font-weight: 400;
+    font-style: normal;
+   
+}
+.About h1{
+    font-size: 50px;
+    color: #121212de;
+    /* font-weight:200; */
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    justify-content: center;
+      
+}
+.About {
+    text-align: center;
+    width: 100%;
+    height: 120vh;
+    background-image: linear-gradient(rgba(114, 227, 227, 0.813),#0090);
+}
+
+
+.contact_us{
+    text-align: center;
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(210, 136, 225, 0.813),#0090);
+    
+}
+
+.contact{
+    display:flex;
+    text-align: center;
+}
+.details{
+    position: absolute;
+    top:92rem;
+}
+.map{
+    position: absolute;
+    right:105px;
+}
+
+.contact_us h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #121212de;
+    /* font-weight:200; */
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    justify-content: center;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .row button{
+    /* display: inline; */
+    background-color: #75d7b8;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: absolute;
+    bottom: -88rem;
+  }
+
+  .icons{
+    font-size: 3rem;
+  }
+  footer{
+    text-align: center;
+  }
